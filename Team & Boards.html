@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Team & Advisory Board - Water Conservation Hub</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        /* Basic styling for the team and boards section */
+        .team-and-boards-container {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        h2 {
+            color: #2e7d32; /* Earthy green */
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        /* Team Section Styling */
+        .team-section {
+            margin-bottom: 40px;
+            padding-bottom: 30px;
+            border-bottom: 1px solid #e0f2f7; /* Light blue separator */
+        }
+
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-top: 20px;
+        }
+
+        .team-member {
+            text-align: center;
+            padding: 20px;
+            border: 1px solid #d4edda; /* Light green border */
+            border-radius: 8px;
+            background-color: #f1f8e9; /* Very light green background */
+        }
+
+        .team-member .member-image-wrapper {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            overflow: hidden;
+            margin: 0 auto 15px;
+            border: 3px solid #aed581; /* Slightly darker green border */
+            background-color: #e0f2f7; /* Light blue background */
+        }
+
+        .team-member img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        .team-member h3 {
+            color: #1b5e20; /* Darker green */
+            margin-bottom: 5px;
+            font-size: 1.2em;
+        }
+
+        .team-member .role {
+            color: #558b2f; /* Medium green */
+            font-size: 0.9em;
+            margin-bottom: 10px;
+        }
+
+        .team-member .bio {
+            color: #33691e; /* Darker green */
+            font-size: 0.95em;
+            margin-bottom: 15px;
+        }
+
+        /* Advisory Board Section Styling */
+        .boards-section {
+            padding-bottom: 30px;
+        }
+
+        .board-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .board-member {
+            padding: 20px;
+            border: 1px solid #d4edda; /* Light green border */
+            border-radius: 8px;
+            background-color: #f1f8e9; /* Very light green background */
+        }
+
+        .board-member h3 {
+            color: #1b5e20; /* Darker green */
+            margin-bottom: 5px;
+            font-size: 1.1em;
+        }
+
+        .board-member .role {
+            color: #558b2f; /* Medium green */
+            font-size: 0.9em;
+            margin-bottom: 10px;
+        }
+
+        .board-member .board-bio {
+            color: #33691e; /* Darker green */
+            font-size: 0.95em;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="team-and-boards-container">
+        <section class="team-section">
+            <h2>Our Dedicated Team</h2>
+            <p class="tagline" style="text-align: center; color: #555; margin-bottom: 30px;">Working Together for a Water-Wise Future</p>
+            <div class="team-grid">
+                <div class="team-member">
+                    <div class="member-image-wrapper">
+                        <img src="img/team/aamir-khan.jpg" alt="Aamir Khan">
+                    </div>
+                    <h3>Aamir Khan</h3>
+                    <p class="role">Co-Founder</p>
+                    <p class="bio">Driven by a deep concern for water scarcity, Aamir's vision and leadership have been pivotal in establishing the Paani Foundation.</p>
+                </div>
+                <div class="team-member">
+                    <div class="member-image-wrapper">
+                        <img src="img/team/kiran-rao.jpg" alt="Kiran Rao">
+                    </div>
+                    <h3>Kiran Rao</h3>
+                    <p class="role">Co-Founder</p>
+                    <p class="bio">Kiran's strategic insights and commitment have been instrumental in shaping the foundation's approach to drought relief.</p>
+                </div>
+                <div class="team-member">
+                    <div class="member-image-wrapper">
+                        <img src="img/team/avinash-pol.jpg" alt="Dr. Avinash Pol">
+                    </div>
+                    <h3>Dr. Avinash Pol</h3>
+                    <p class="role">Inspiration & Advisor</p>
+                    <p class="bio">Dr. Pol's pioneering work in water conservation served as the inspiration for the Paani Foundation's impactful initiatives.</p>
+                </div>
+                </div>
+        </section>
+
+        <section class="boards-section">
+            <h2>Our Advisory Board</h2>
+            <p class="tagline" style="text-align: center; color: #555; margin-bottom: 30px;">Guiding Our Mission with Expertise</p>
+            <div class="board-grid">
+                <div class="board-member">
+                    <h3>[Board Member 1 Name]</h3>
+                    <p class="role">[Board Member 1 Role]</p>
+                    <p class="board-bio">[Brief bio/contribution of Board Member 1]</p>
+                </div>
+                <div class="board-member">
+                    <h3>[Board Member 2 Name]</h3>
+                    <p class="role">[Board Member 2 Role]</p>
+                    <p class="board-bio">[Brief bio/contribution of Board Member 2]</p>
+                </div>
+                <div class="board-member">
+                    <h3>[Board Member 3 Name]</h3>
+                    <p class="role">[Board Member 3 Role]</p>
+                    <p class="board-bio">[Brief bio/contribution of Board Member 3]</p>
+                </div>
+                </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Water Conservation Hub. All rights reserved.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

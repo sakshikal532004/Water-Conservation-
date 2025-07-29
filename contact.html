@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            width: 80%;
+            max-width: 800px;
+            background-color: white;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .contact-header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .contact-header h2 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        .contact-header p {
+            font-size: 1em;
+            color: #666;
+        }
+
+        .form-row {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+
+        .form-row input[type="email"],
+        .form-row input[type="text"] {
+            width: 48%;
+            padding: 12px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        .form-row input[type="email"]::placeholder,
+        .form-row input[type="text"]::placeholder {
+            color: #aaa;
+        }
+
+        .submit-button {
+            display: block;
+            width: 100%;
+            padding: 12px;
+            background-color: #00bcd4;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .submit-button:hover {
+            background-color: #0097a7;
+        }
+
+        .info-section {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 40px;
+            background-color: #e0f7fa;
+            padding: 30px;
+            border-radius: 8px;
+        }
+
+        .info-item {
+            text-align: center;
+        }
+
+        .info-item h3 {
+            margin-bottom: 10px;
+        }
+
+        .info-item p {
+            color: #666;
+        }
+
+        .info-icon {
+            width: 50px;
+            height: 50px;
+            background-color: white;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+
+        .info-icon img {
+            max-width: 30px;
+            max-height: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="contact-header">
+            <h2>Contact Us</h2>
+            <p>Any questions or remarks? Just write us a message!</p>
+        </div>
+
+        <div class="form-row">
+            <input type="email" placeholder="Enter a valid email address">
+            <input type="text" placeholder="Enter your Name">
+        </div>
+
+        <button class="submit-button">SUBMIT</button>
+
+        
+    </div>
+</body>
+</html>

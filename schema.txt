@@ -1,0 +1,27 @@
+CREATE TABLE User (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    username VARCHAR(50) NOT NULL,
+    email VARCHAR(100) NOT NULL UNIQUE,
+    address TEXT NOT NULL,
+    password VARCHAR(255) NOT NULL,
+    role VARCHAR(20) DEFAULT 'User'  -- optional: for user/admin distinction
+);
+
+
+CREATE TABLE WaterUsage (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    user_id INT NOT NULL,
+    usage_date DATE NOT NULL,
+    total_usage INT NOT NULL,
+    morning_usage INT DEFAULT 0,
+    afternoon_usage INT DEFAULT 0,
+    evening_usage INT DEFAULT 0,
+    bathing INT DEFAULT 0,
+    washing_clothes INT DEFAULT 0,
+    washing_utensils INT DEFAULT 0,
+    cooking INT DEFAULT 0,
+    drinking INT DEFAULT 0,
+    cleaning INT DEFAULT 0,
+    goal INT DEFAULT 150,
+    FOREIGN KEY (user_id) REFERENCES User(id) ON DELETE CASCADE
+);
